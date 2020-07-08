@@ -1006,7 +1006,7 @@ $(document).ready(function(){
       $('.contain-review').slick({
         infinite: true,
         slidesToShow: 2,
-        slidesToScroll: 1,
+        slidesToScroll: 2,
         autoplay : true,
         autoplaySpeed : 2000,
         dots : true,
@@ -1014,30 +1014,16 @@ $(document).ready(function(){
 {
         breakpoint: 500,
         settings: {
+        
         centerMode: true,
         centerPadding: '1px',
-        slidesToShow: 1
+        slidesToShow: 1,
+        slidesToScroll: 1
 }
 }]
       })
 });
-// $(document).ready(
-//     () => {
-        
-//     var getChange = document.getElementsByClassName('review')
-//     var getBtn = document.getElementsByClassName('button')
-//     $('.review').change(() => {
-//     console.log(1)
-//     if(getChange[0].classList.contains('stick-active'))
-//       {
-//         getBtn[0].classList.add('slick-color')
-//       }
-//       if(getChange[2].classList.contains('stick-active'))
-//       {
-//         getBtn[2].classList.add('slick-color')
-//       }
-// })
-// });
+
 
 var containItem = document.getElementsByClassName('contain-items')
 

@@ -246,7 +246,7 @@
 
 
 .view-box:hover{
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
     top: -4px;
     background-color: white;
     
@@ -258,7 +258,7 @@
     color: #FF5959;
 }
 .hire-box:hover{
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
     top: -4px;
     background-color: white;
 }
@@ -407,7 +407,7 @@
     font-weight: bold;
 }
 .download-box:hover{
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
     top: -4px;
     background-color: #4A63E7;
 }
@@ -450,7 +450,7 @@
     font-weight: bold;
 }
 .hire-box-small:hover{
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
     top: -4px;
     background-color: #FF5959;
 }
@@ -863,7 +863,7 @@
     margin-top: 20px;
 }
 .active{
-    background-color: #666;
+    background-color: #ff5959;
     color: white;
     padding: 8px 10px;
     border-radius: 20px;
@@ -1034,7 +1034,7 @@
     font-weight: 600;
     overflow: hidden;
     padding: 8px 18px;
-    transition: all 1s;
+    transition: all .5s;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
@@ -1050,7 +1050,7 @@
 .btn-price:hover{
     top: -4px;
     background-color: #4A63E7;
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
 }
 .btn-price-2:hover{
     background-color:white;
@@ -1219,7 +1219,7 @@
     text-align: center;
 }
 .thumb:hover{
-    box-shadow: 0px 0px 43px -26px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 43px -26px rgba(0,0,0,0.5);
 }
 .magazine img:hover {
     transform: scale(1.1);
@@ -1395,7 +1395,7 @@
 .btn-submit:hover{
     top: -3px;
     background-color: #4A63E7;
-    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
 
 
 }
