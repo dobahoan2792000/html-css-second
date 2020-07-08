@@ -22,46 +22,45 @@
             <a href="#" class="my-name">Hoan Ba</a>
             <p>WEB DEVELOPER</p>
             <ul class="ul-1">
-                <li>
-                    <a href="#box1" class="list-nav">
+                <li class="home">
+                    <a href="#box1" class="list-nav link-home scroll-to">
                         <i class="fas fa-home">
-    
                     </i>
                         <p>Home</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box2" class="list-nav">
+                <li class="home">
+                    <a href="#box2" class="list-nav link-about">
                         <i class="fas fa-user-alt"></i>
                         <p>About</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box5" class="list-nav">
+                <li class="home">
+                    <a href="#box5" class="list-nav link-service">
                         <i class="far fa-lightbulb"></i>
                         <p>Services</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box6" class="list-nav">
+                <li class="home">
+                    <a href="#box6" class="list-nav link-resume">
                         <i class="fas fa-graduation-cap"></i>
                         <p>Resume</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box7" class="list-nav">
+                <li class="home">
+                    <a href="#box7" class="list-nav link-work">
                         <i class="fas fa-th-list"></i>
                         <p>Works</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box11" class="list-nav">
+                <li class="home">
+                    <a href="#box11" class="list-nav link-blog">
                         <i class="fas fa-pencil-alt"></i>
                         <p>Blog</p>
                     </a>
                 </li>
-                <li>
-                    <a href="#box12" class="list-nav">
+                <li class="home">
+                    <a href="#box12" class="list-nav link-contact">
                         <i class="fas fa-phone-alt"></i>
                         <p>Contact</p>
                     </a>
@@ -584,7 +583,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn-price">Get started</a>
+                                <div class="contain-btn-price">
+                                    <a href="#" class="btn-price">Get started</a>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -609,7 +610,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn-price">Get started</a>
+                                <div class="contain-btn-price">
+                                    <a href="#" class="btn-price btn-price-2">Get started</a>
+                                </div>
                             </div>
                         </div>
                         <div class="contain-box">
@@ -632,7 +635,9 @@
                                         </li>
                                     </ul>
                                 </div>
-                                <a href="#" class="btn-price">Get started</a>
+                                <div class="contain-btn-price">
+                                    <a href="#" class="btn-price">Get started</a>
+                                </div>
                                 </div>
                             </div>
                         </div>
@@ -708,10 +713,10 @@
                         </div>
                         
                     </div>
-                    <div class="contain-btn-review" id="ctn-btn-review">
+                    <!-- <div class="contain-btn-review" id="ctn-btn-review">
                         <button class="btn-review btn-color" onclick="filterSelectionReview('review-1') "></button>
                         <button class="btn-review" onclick="filterSelectionReview('review-2')"></button>
-                    </div>
+                    </div> -->
                 </div>
                 
             </div>
@@ -918,7 +923,7 @@
                     {
                         if(containItem[i].classList.contains('branding'))
                         {
-                            console.log(containItem[i].classList)
+                            
                             containItem[i].classList.remove('unseen')
                         }
                         
@@ -930,7 +935,7 @@
                     {
                         if(containItem[i].classList.contains('creative'))
                         {
-                            console.log(containItem[i].classList)
+                            
                             containItem[i].classList.remove('unseen')
                         }
                         
@@ -942,7 +947,7 @@
                     {
                         if(containItem[i].classList.contains('design'))
                         {
-                            console.log(containItem[i].classList)
+                            
                             containItem[i].classList.remove('unseen')
                         }
                         
@@ -954,10 +959,8 @@
                     {
                         if(containItem[i].classList.contains('video'))
                         {
-                            console.log(containItem[i].classList)
                             containItem[i].classList.remove('unseen')
                         }
-                        
                         else containItem[i].classList.add('unseen')
                     }
     }
@@ -977,7 +980,7 @@
         centerMode: true,
         centerPadding: '1px',
         slidesToShow: 2
-}
+        }
 },
 {
         breakpoint: 400,
@@ -1001,14 +1004,41 @@
                 }
     
 });
-// // $(document).ready(function(){
-// //         $(".btn").click(function(){
-// //             $(".contain-items").removeAttr("style");
-
-// //         });
-// //     });
-// $(function(){
-//     $('.image-item').lazyload();
+$(document).ready(function(){
+      $('.contain-review').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 1,
+        autoplay : true,
+        autoplaySpeed : 2000,
+        dots : true,
+        responsive:[
+{
+        breakpoint: 500,
+        settings: {
+        centerMode: true,
+        centerPadding: '1px',
+        slidesToShow: 1
+}
+}]
+      })
+});
+// $(document).ready(
+//     () => {
+        
+//     var getChange = document.getElementsByClassName('review')
+//     var getBtn = document.getElementsByClassName('button')
+//     $('.review').change(() => {
+//     console.log(1)
+//     if(getChange[0].classList.contains('stick-active'))
+//       {
+//         getBtn[0].classList.add('slick-color')
+//       }
+//       if(getChange[2].classList.contains('stick-active'))
+//       {
+//         getBtn[2].classList.add('slick-color')
+//       }
+// })
 // });
 
 </script>

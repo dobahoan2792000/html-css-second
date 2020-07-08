@@ -185,8 +185,7 @@
 }
 
 .view-box a {
-    /* width: 100%;
-    height: 100%; */
+  
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 16px;
@@ -243,9 +242,10 @@
 
 
 .view-box:hover{
-
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: -4px;
     background-color: white;
+    
 }
 .view-box:hover .p-view-box{
     color: #FF5959;
@@ -254,7 +254,7 @@
     color: #FF5959;
 }
 .hire-box:hover{
-    
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: -4px;
     background-color: white;
 }
@@ -267,11 +267,7 @@
 /* box-second */
 
 .box2 {
-   
     padding: 65px 40px 60px;
-    /* display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; */
 }
 
 .box-second {
@@ -380,14 +376,12 @@
     text-align: center;
     line-height: 39px;
     cursor: pointer;
-    display: absolute;
+    position: absolute !important;
     top:0px;
     transition: all 0.5s;
 }
 
 .download-box a {
-    /* width: 100%;
-    height: 100%; */
     font-family: 'Open Sans', sans-serif;
     text-decoration: none;
     font-size: 14px;
@@ -407,7 +401,7 @@
     font-weight: bold;
 }
 .download-box:hover{
-    position: relative;
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: -4px;
     background-color: #4A63E7;
 }
@@ -428,7 +422,7 @@
     text-align: center;
     cursor: pointer;
     background-color: #4A63E7;
-    display: absolute;
+    position: absolute;
     top: 0px;
     transition: all 0.5s;
 }
@@ -450,7 +444,7 @@
     font-weight: bold;
 }
 .hire-box-small:hover{
-    position: relative;
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
     top: -4px;
     background-color: #FF5959;
 }
@@ -872,7 +866,7 @@
     height: 185px;
     box-sizing: border-box;
     margin-top: 20px;
-    margin-right: 8px;
+    margin-right: 15px;
 }
 .image-item{
     display: block;
@@ -907,10 +901,12 @@
 }
 .contain-items:hover .overlay{
     opacity: 1;
+    
 }
 .contain-items:hover .items-text{
     display: block;
     top: 30px;
+    
 }
 .show{
     display: block;
@@ -1017,6 +1013,7 @@
     font-size: 12px;
     font-weight: 400;
 }
+
 .btn-price{
     box-shadow: none;
     text-decoration: none;
@@ -1028,10 +1025,22 @@
     font-weight: 600;
     overflow: hidden;
     padding: 8px 22px;
-    position: relative;
     display: inline-block;
     margin-top: 20px;
     margin-bottom: 20px;
+    position: relative;
+    transition: all .5s;
+}
+.btn-price:hover{
+    top: -4px;
+    background-color: #4A63E7;
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+
+}
+.btn-price-2:hover{
+    background-color:white;
+    color:black
 }
 .center-box{
     background-color: #4A63E7;
@@ -1140,8 +1149,6 @@
 }
 .slide{
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 .sub-slide{
     width: 100%;
@@ -1174,14 +1181,15 @@
 .magazine{
     width: 30%;
     position: relative;
-    overflow: hidden;
-    
+    /* overflow: hidden; */
     box-sizing: border-box;
     
 }
 .magazine .thumb{
     overflow: hidden;
     border-radius: 10px;
+    
+
     
 }
 .magazine img{
@@ -1194,11 +1202,13 @@
     transition: all .5s ease-in-out;
     text-align: center;
 }
+.thumb:hover{
+    box-shadow: 0px 0px 43px -26px rgba(0,0,0,0.75);
+}
 .magazine img:hover {
     transform: scale(1.1);
-    
-    
 }
+
 .link-to{
     margin: 20px 0px;
 }
@@ -1345,7 +1355,6 @@
     padding: 10px;
     box-sizing: border-box;
     position: relative;
-    transition: all 2s;
 }
 .sub-mit button{
     box-sizing: border-box;
@@ -1360,19 +1369,54 @@
     border: 1px solid #ff5959;
 }
 .btn-submit{
-    transition: all 1s ease-out;
+    transition: all .5s ease-out;
+    position: absolute;
 }
 .btn-submit:hover{
-    position: relative;
-    top: -4px;
+    top: 3px;
     background-color: #4A63E7;
+    box-shadow:  5px 6px 20px 0 rgba(199, 184, 184, 0.19);
+
 }
 .unseen{
     display: none;
 }
-
-
-
+/* box9-slick */
+.slick-dots{
+    bottom: -50px !important;
+}
+.slick-dots li button{
+    width: 10px !important;
+    height: 10px !important;
+    border-radius: 50%;
+    background-color:#888 !important;
+}
+.slick-dots li.slick-active button{
+    background-color: #ff5959 !important;
+}
+.slick-color{
+    background-color: #ff5959 !important;
+}
+.slick-dots li{
+    width: 10px !important;
+    height: 10px !important;
+}
+/* scroll */
+.home{
+    position: relative;
+}
+.scroll-to::before{
+    content: "";
+    width: 3px;
+    height: 15px;
+    background-color: #ff5959;
+    z-index: 1;
+    box-sizing: border-box;
+    position: absolute;
+    left: -30px;
+    top: 3px;
+    
+}
 @media screen and (max-width : 1270px)
 {
     .contain-img{
