@@ -1045,14 +1045,12 @@ console.log($("#items").find(":selected").val())
 function typeDisplay(){
     if($("#items").find(":selected").val()=='all')
       {
-        console.log(1)
         for(var i = 0 ; i< containItem.length; i++)
                     {
                         containItem[i].classList.remove('unseen')
                     }
       }
-      if($("#items").find(":selected").val()=='video'){
-        console.log(2)
+      else{
         for(var i = 0 ; i< containItem.length; i++)
                     {
                         containItem[i].classList.add('unseen')
