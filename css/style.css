@@ -1078,11 +1078,13 @@
     width: 50%;
     padding: 0px 10px;
     display: none;
+    outline: none;
 }
 .inside-review{
     padding: 30px 25px;
     border: 1px solid #efefef;
     border-radius: 20px;
+    outline: none;
 }
 .inside-review p{
     font-size: 14px;
@@ -1188,7 +1190,7 @@
 .magazine .thumb{
     overflow: hidden;
     border-radius: 10px;
-    
+    transition: all .5s;
 
     
 }
@@ -1266,6 +1268,8 @@
 }
 .contain-contact-row{
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .label-contact{
     padding: 10px;
@@ -1352,12 +1356,12 @@
     height: 137px;
 }
 .sub-mit{
-    padding: 10px;
-    box-sizing: border-box;
+    width: 100%;
     position: relative;
+    margin-top: 20px;
 }
 .sub-mit button{
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
     padding: 12px 30px;
     border: 1px solid #e3e3e3;
     border-radius: 20px;
@@ -1371,13 +1375,16 @@
 .btn-submit{
     transition: all .5s ease-out;
     position: absolute;
+    
 }
 .btn-submit:hover{
-    top: 3px;
+    top: -3px;
     background-color: #4A63E7;
-    box-shadow:  5px 6px 20px 0 rgba(199, 184, 184, 0.19);
+    box-shadow:  5px 6px 20px 0 rgba(0, 0, 0, 0.19);
+
 
 }
+
 .unseen{
     display: none;
 }
@@ -1517,7 +1524,9 @@
         flex-wrap: wrap;
         justify-content: center;
     }
-    
+    .sub-mit{
+        padding-left: 10px;
+    }
     
     
    
@@ -1630,6 +1639,7 @@
     .review{
         width: 100%;
         margin-top: 20px;
+        
     }
     .my-name{
         font-size: 20px;

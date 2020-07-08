@@ -93,7 +93,9 @@
                     </a>
                 </li>
             </ul>
+            <footer>
 
+            </footer>
         </div>
         <div class="boxes">
             <div class="nav-mobile">
@@ -877,14 +879,6 @@
     <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script type="text/javascript">
     var nav = document.querySelector('.nav')
-    window.onload = () => {
-        var screenSize = screen.width;
-        
-        if(screenSize<800)
-            {
-               nav.classList.add('hidden')
-            }
-    }
     function toggleHidden(){
         var nav = document.querySelector('.nav')
         if (nav.classList.contains('hidden')) {
