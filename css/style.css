@@ -850,7 +850,9 @@
     background-color: white;
     outline: none;
 }
-
+#items{
+    display: none;
+}
 .btn:not(:last-child){
     margin-right: 1.5em;
 }
@@ -1669,7 +1671,22 @@
         width: 70%;
     }
 }
-
+@media screen and (max-width : 500px)
+{
+    .btn{
+        display: none;
+    }
+    #items{
+        display: block;
+    }
+    #items option{
+        font-size: 10px;
+        
+    }
+    .hide{
+        display: none;
+    }
+}
 @media screen and (max-width : 400px)
 {
     .nav{
