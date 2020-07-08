@@ -1683,5 +1683,9 @@
         display: inline-block;
         margin-left: 25px;
     }
-    
+    .btn-price{
+        padding: 7px 16px;
+        font-size: 12px;
+        width: 40%;
+    }
 }
