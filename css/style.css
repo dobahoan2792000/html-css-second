@@ -17,6 +17,7 @@
     height: auto;
     display: flex;
     justify-content: space-evenly;
+    
 }
 .contain-nav{
     width: 60%;
@@ -33,6 +34,7 @@
     position: sticky;
     position: sticky;
     top: 40px !important;
+    transition: all 1s;
 }
 
 .nav img {
@@ -134,6 +136,7 @@
     width: 60%;
     height: auto;
     margin-top: 40px;
+    transition: all 1s;
 }
 
 .box {
@@ -924,6 +927,7 @@
     text-align: center;
     margin-top: 30px;
     outline: none;
+    position: relative;
 }
 #button-load-more {
     padding: 10px 20px;
@@ -934,6 +938,17 @@
     color: white;
     border: none;
     cursor: pointer;
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s;
+}
+#button-load-more:hover{
+    top: -4px;
+    background-color: #4A63E7;
+    box-shadow:  0px 6px 20px 0 rgba(0, 0, 0, 0.4);
+
 }
 /* box8 */
 .box8{
@@ -1373,24 +1388,24 @@
     width: 100%;
     position: relative;
     margin-top: 20px;
+    /* height: 41px; */
+    /* padding: 10px;
+    box-sizing: border-box; */
 }
-.sub-mit button{
-    /* box-sizing: border-box; */
+
+.input-area:focus{
+    border: 1px solid #ff5959;
+}
+.btn-submit{
     padding: 12px 30px;
     border: 1px solid #e3e3e3;
     border-radius: 20px;
     background-color: #FF5959;
     color: white;
     cursor: pointer;
-}
-.input-area:focus{
-    border: 1px solid #ff5959;
-}
-.btn-submit{
     transition: all .5s ease-out;
     position: absolute;
     top: 0px;
-    
 }
 .btn-submit:hover{
     top: -3px;
@@ -1458,7 +1473,7 @@
 {
     
     .nav{
-        width: 30%;
+        width: 30% ;
     }
     .list-nav p{
         font-size: 12px;
@@ -1552,7 +1567,7 @@
 @media screen and (max-width : 800px)
 {
     .hidden {
-        display: none;
+        left: -300px !important;
     }
     .boxes{
         margin-top: 0px !important;
@@ -1566,8 +1581,9 @@
     .nav{
         position: fixed;
         left: 10px;
-        width: 25%;
         margin-top: 40px;
+        left:0px;
+        transition: all 1s;
     }
     .nav .icon li{
         padding: 3px;

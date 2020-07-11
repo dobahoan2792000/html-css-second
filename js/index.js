@@ -38,7 +38,7 @@ function filterSelectionReview(c) {
   for (i = 0; i < x.length; i++) {
     w3RemoveClass(x[i], "review-block");
     if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "review-block");
-    console.log(x[i].className)
+    
   }
 }
 function removeClass(element, name) {
@@ -83,7 +83,7 @@ window.addEventListener('scroll', function (event) {
    
     var g1 = getClass[0].classList;
     removeClass(getClass,'scroll-to')
-    console.log(getClass)
+   
     g1.add('scroll-to');
   }
   else if(isInViewport(h2))
